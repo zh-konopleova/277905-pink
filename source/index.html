@@ -6,36 +6,78 @@
       name="viewport"
       content="width=device-width,initial-scale=1">
     <title>Pink</title>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__inner">
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo" href="index.html">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo-container">
+          <a
+            href="./index.html"
+            class="header__logo-link">
+            <svg
+              class="header__logo"
+              viewBox="0 0 146.3 40.38">
+              <title>Pink Logo</title>
+              <path d="M71.87,18.66a1.29,1.29,0,0,1,1.26-1.29h7.18c5.09,0,8.44,2.71,8.44,7.15v.06c0,4.86-4.06,7.38-8.86,7.38H74.42v6.82a1.28,1.28,0,1,1-2.55,0V18.66Zm8.12,11c3.73,0,6.18-2,6.18-5v-.06c0-3.22-2.41-4.89-6-4.89h-5.7v9.91Z" transform="translate(0)"/>
+              <path d="M93.6,18.5a1.28,1.28,0,1,1,2.55,0V38.78a1.28,1.28,0,1,1-2.55,0Z" transform="translate(0)"/>
+              <path d="M102.74,18.53A1.28,1.28,0,0,1,104,17.28h.35a1.55,1.55,0,0,1,1.29.74l13.69,17.45v-17a1.24,1.24,0,1,1,2.48,0V38.82A1.14,1.14,0,0,1,120.65,40h-.13a1.71,1.71,0,0,1-1.32-.78l-14-17.86V38.82A1.26,1.26,0,0,1,104,40.07a1.24,1.24,0,0,1-1.22-1.25V18.53Z" transform="translate(0)"/>
+              <path d="M128.17,18.5a1.28,1.28,0,1,1,2.55,0V30.83l12.84-13.17a1.48,1.48,0,0,1,1-.45,1.28,1.28,0,0,1,1.23,1.26,1.29,1.29,0,0,1-.42.9l-8,7.92L146,37.85a1.44,1.44,0,0,1,.35.94A1.31,1.31,0,0,1,145,40.07a1.24,1.24,0,0,1-1-.58L135.58,29l-4.86,4.86v4.9a1.27,1.27,0,1,1-2.54,0V18.5Z" transform="translate(0)"/>
+              <path d="M60.5,28.27" transform="translate(0)"/>
+              <path d="M60.46,28,55.29,6.65C54.93,4.3,52.69,0,46.69,0a1.5,1.5,0,0,0,0,3c4.85,0,5.57,3.73,5.64,4.14l4.76,19.7H55a12,12,0,0,0-23.85,0H29.35a12,12,0,0,0-23.86,0H3.42L8.19,7.14C8.25,6.73,9,3,13.83,3a1.5,1.5,0,0,0,0-3c-6,0-8.24,4.3-8.6,6.65L.05,28a1.42,1.42,0,0,0,1.43,1.82h4a12,12,0,0,0,23.85,0h1.81a12,12,0,0,0,23.86,0h4A1.41,1.41,0,0,0,60.46,28ZM26.31,29.84a9,9,0,0,1-17.92-1.5,9.29,9.29,0,0,1,.13-1.5,9,9,0,0,1,17.79,0,8.29,8.29,0,0,1,.14,1.5A8.12,8.12,0,0,1,26.31,29.84Zm25.68,0a9,9,0,0,1-17.93-1.5,9.3,9.3,0,0,1,.14-1.5,9,9,0,0,1,17.79,0,9.29,9.29,0,0,1,.13,1.5A9.1,9.1,0,0,1,52,29.84Z"/>
+            </svg>
           </a>
-          <button class="page-header__menu-opener" type="button">Открыть меню</button>
+
+          <button
+            type="button"
+            class="header__menu-btn">
+            <svg
+              class="header__menu-icon"
+              height="25px"
+              viewBox="0 0 23.87 23.87">
+              <title>close</title>
+              <path d="M15.09,11.93l8.56-8.56a.75.75,0,0,0,0-1.06L21.55.22a.75.75,0,0,0-1.06,0L11.93,8.78,3.37.22a.77.77,0,0,0-1.06,0L.22,2.31a.75.75,0,0,0,0,1.06l8.56,8.56L.22,20.49a.75.75,0,0,0,0,1.06l2.09,2.1a.75.75,0,0,0,1.06,0l8.56-8.56,8.56,8.56a.77.77,0,0,0,.53.22.75.75,0,0,0,.53-.22l2.1-2.1a.75.75,0,0,0,0-1.06Z"/>
+            </svg>
+            <svg
+              class="header__menu-icon hidden"
+              height="25px"
+              viewBox="0 0 49.95 24.01">
+              <title>Burger Icon</title>
+              <path id="path-1" class="cls-1" d="M1.14,0A1.07,1.07,0,0,0,0,1V3A1.07,1.07,0,0,0,1.14,4H48.81A1.07,1.07,0,0,0,50,3V1a1.07,1.07,0,0,0-1.14-1Zm0,10A1.07,1.07,0,0,0,0,11v2a1.07,1.07,0,0,0,1.14,1H48.81A1.06,1.06,0,0,0,50,13V11a1.08,1.08,0,0,0-1.14-1Zm0,10A1.06,1.06,0,0,0,0,21v2a1.07,1.07,0,0,0,1.14,1H48.81A1.07,1.07,0,0,0,50,23V21a1.07,1.07,0,0,0-1.14-1Z"/>
+              <path id="path-1-2" data-name="path-1" class="cls-1" d="M1.14,0A1.07,1.07,0,0,0,0,1V3A1.07,1.07,0,0,0,1.14,4H48.81A1.07,1.07,0,0,0,50,3V1a1.07,1.07,0,0,0-1.14-1Zm0,10A1.07,1.07,0,0,0,0,11v2a1.07,1.07,0,0,0,1.14,1H48.81A1.06,1.06,0,0,0,50,13V11a1.08,1.08,0,0,0-1.14-1Zm0,10A1.06,1.06,0,0,0,0,21v2a1.07,1.07,0,0,0,1.14,1H48.81A1.07,1.07,0,0,0,50,23V21a1.07,1.07,0,0,0-1.14-1Z"/>
+            </svg>
+            <span class="visually-hidden">Меню</span>
+          </button>
         </div>
 
-        <nav class="main-nav">
-          <ul class="main-nav__list site-list list-unstyled">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a
+                class="header__nav-link active">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">
+            <li class="header__nav-item">
+              <a
+                href="#"
+                class="header__nav-link">
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+            <li class="header__nav-item">
+              <a
+                href="#"
+                class="header__nav-link">
                 Конкурс
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <li class="header__nav-item">
+              <a
+                href="#"
+                class="header__nav-link">
                 HTML Academy
               </a>
             </li>

@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгения Коноплёва](https://up.htmlacademy.ru/adaptive/15/user/277905).
-* Наставник: `Неизвестно`.
+* Наставник: `самоучка`.
 
 ---
 

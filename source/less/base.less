@@ -28,6 +28,7 @@ body {
 }
 
 body {
+  position: relative;
   background-color: #ffffff;
   color: #283645;
   font-family: "Open Sans", sans-serif;
@@ -46,4 +47,28 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: @mobile-width;
+  margin: auto;
+  padding-left: @mobile-padding;
+  padding-right: @mobile-padding;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: @tablet-width;
+    padding-left: @tablet-padding;
+    padding-right: @tablet-padding;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: @desktop-width;
+    padding-left: @desktop-padding;
+    padding-right: @desktop-padding;
+  }
 }

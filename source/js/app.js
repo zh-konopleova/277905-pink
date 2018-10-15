@@ -2,32 +2,65 @@ document.querySelectorAll('.slider').forEach(function (el) {
   el.classList.add('slider--js');
 });
 
-var reviewsSlider = document.querySelector('#reviews-slider');
-function moveToSlide(item) {
-  var max = reviewsSlider.dataset.max;
-  if (item < 0) item = max;
+
+function moveToSlide(slider, item, offset_callback) {
+  var max = slider.dataset.max,
+      min = slider.dataset.min;
+
+  if (item < min) item = max;
   if (item > max) item = 0;
 
-  reviewsSlider.querySelector('.slider__nav-link.active').classList.remove('active');
+  slider.querySelector('.slider__nav-link.active').classList.remove('active');
 
-  var offset = -1 * item * 100;
-  offset = offset + '%';
+  var offset = offset_callback(item);
 
-  reviewsSlider.dataset.current = item;
-  reviewsSlider.querySelector('.slider__nav-link[data-item="' + item + '"]').classList.add('active');
-  reviewsSlider.querySelector('.slider__list').style.transform = 'translateX(' + offset + ')';
+  slider.dataset.current = item;
+  slider.querySelector('.slider__nav-link[data-item="' + item + '"]').classList.add('active');
+  slider.querySelector('.slider__list').style.transform = 'translateX(' + offset + ')';
 }
+
+var reviewsSlider = document.querySelector('#reviews-slider'),
+    reviewsOffset = function (item) {
+      return (-1 * item * 100) + '%';
+    };
 
 reviewsSlider.querySelectorAll('.slider__nav-link').forEach(function (el) {
   el.addEventListener('click', function () {
-    moveToSlide(parseInt(this.dataset.item, 10));
+    moveToSlide(
+      reviewsSlider,
+      parseInt(this.dataset.item, 10),
+      reviewsOffset
+    );
   });
 });
 
 reviewsSlider.querySelector('.slider__nav-arrow--prev').addEventListener('click', function () {
-  moveToSlide(parseInt(reviewsSlider.dataset.current, 10) - 1);
-})
+  moveToSlide(
+    reviewsSlider,
+    parseInt(reviewsSlider.dataset.current, 10) - 1,
+    reviewsOffset
+  );
+});
 
 reviewsSlider.querySelector('.slider__nav-arrow--next').addEventListener('click', function () {
-  moveToSlide(parseInt(reviewsSlider.dataset.current, 10) + 1);
+  moveToSlide(
+    reviewsSlider,
+    parseInt(reviewsSlider.dataset.current, 10) + 1,
+    reviewsOffset
+  );
+});
+
+var tariffsSlider = document.querySelector('#tariffs-slider'),
+    tariffsOffset = function (item) {
+      return (-1 * item * 280) + 'px';
+    };
+
+tariffsSlider.querySelectorAll('.slider__nav-link').forEach(function (el) {
+  el.addEventListener('click', function () {
+    moveToSlide(
+      tariffsSlider,
+      parseInt(this.dataset.item, 10),
+      tariffsOffset
+    )
+  });
 })

@@ -1,6 +1,8 @@
 .slider--js {
   .slider__list {
     flex-wrap: nowrap;
+    trasnform: translateX(0);
+    transition: transform 0.5s linear 0s;
   }
 
   .slider__nav {
@@ -29,13 +31,12 @@
   flex-direction: row;
   justify-content: center;
 
-  margin: -7.5px;
   padding-left: 0;
   list-style: none;
 }
 
 .slider__nav-item {
-  margin: 7.5px;
+  margin: 0 7.5px;
 }
 
 .slider__nav-link {

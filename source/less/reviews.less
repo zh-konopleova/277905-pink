@@ -1,0 +1,50 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+
+.reviews__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding-left: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  flex-shrink: 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    position: relative;
+    padding-top: 190px;
+    padding-bottom: 130px;
+  }
+
+  .reviews::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 50%;
+
+    display: block;
+    width: 78.672px;
+    height: 63.789px;
+    margin-left: -39.336px;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+  }
+}

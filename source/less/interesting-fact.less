@@ -1,0 +1,92 @@
+.interesting-fact {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .interesting-fact {
+    display: block;
+  }
+
+  .interesting-fact__content {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50%;
+  }
+
+  .interesting-fact__content::after {
+    content: "24";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+
+    text-align: center;
+    line-height: 200px;
+    vertical-align: middle;
+    font-size: 96px;
+    font-weight: 700;
+    color: #d22856;
+
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-size: 100% auto;
+  }
+
+  .interesting-fact__content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    display: block;
+    width: 240px;
+    height: 278px;
+    margin-top: -157px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .interesting-fact__h {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .interesting-fact__description {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .interesting-fact {
+    background-color: #f2f2f2;
+  }
+
+  .interesting-fact__content {
+    padding-bottom: 120px;
+    padding-left: 380px;
+  }
+
+  .interesting-fact__content::before {
+    width: 300px;
+    height: 348px;
+    margin-top: -195px;
+  }
+
+  .interesting-fact__content::after {
+    left: 25px;
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    margin-top: -125px;
+  }
+}

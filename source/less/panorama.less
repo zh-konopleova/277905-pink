@@ -1,0 +1,107 @@
+.panorama {
+  position: relative;
+}
+
+.panorama__header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.panorama__h {
+  display: inline-block;
+  margin: 0;
+  margin-left: auto;
+  padding: 10px 20px;
+
+  background-color: #d22856;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.panorama__img {
+  display: block;
+  width: 100%;
+}
+
+.panorama__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 20px 18px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.panorama__metainfo {
+  margin-bottom: 5px;
+}
+
+.panorama__user-name {
+  margin: 0;
+  display: inline-block;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.panorama__created-at {
+  margin: 0;
+  display: inline-block;
+}
+
+.panorama__text {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.panorama__like-btn {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0;
+  border-width: 0;
+  font-size: 12px;
+  background-color: transparent;
+  color: #d22856;
+  text-transform: uppercase;
+
+  svg {
+    margin-right: 20px;
+    fill: #d22856;
+  }
+}
+
+.panorama__like-btn:hover,
+.panorama__like-btn:focus {
+  text-decoration: underline;
+}
+
+.panorama__like-btn:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .panorama__metainfo {
+    order: 1;
+  }
+
+  .panorama__text {
+    order: 3;
+  }
+
+  .panorama__like-btn {
+    order: 2;
+    margin-left: auto;
+
+    svg {
+      margin-right: 0;
+      margin-left: 20px;
+
+      order: 2;
+    }
+  }
+}

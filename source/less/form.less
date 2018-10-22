@@ -1,0 +1,38 @@
+.form__range-wrapper {
+  position: relative;
+}
+
+.form__range-wrapper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #283645;
+}
+
+.form__range-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25%;
+
+  box-sizing: border-box;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-left: -7.5px;
+  margin-top: -7.5px;
+
+  border: solid 2px #d22856;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.form__range-wrapper:hover::after,
+.form__range-wrapper:focus::after {
+  background-color: #d22856;
+}
+
+.form__range {
+  display: none;
+}

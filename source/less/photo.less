@@ -1,0 +1,65 @@
+.photo__img {
+  display: block;
+  width: 100%;
+}
+
+.photo__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 20px 18px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__metainfo {
+  margin-bottom: 5px;
+}
+
+.photo__user-name {
+  margin: 0;
+  display: inline-block;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.photo__created-at {
+  margin: 0;
+  display: inline-block;
+}
+
+.photo__h {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.photo__like-btn {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0;
+  border-width: 0;
+  font-size: 12px;
+  background-color: transparent;
+  color: #d22856;
+  text-transform: uppercase;
+
+  svg {
+    margin-right: 20px;
+    fill: #d22856;
+  }
+}
+
+.photo__like-btn:hover,
+.photo__like-btn:focus {
+  text-decoration: underline;
+}
+
+.photo__like-btn:active {
+  opacity: 0.3;
+}

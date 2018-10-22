@@ -1,0 +1,37 @@
+.photos {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.photos__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: -10px;
+  margin-bottom: 50px - 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.photos__item {
+  width: 100%;
+  padding: 10px;
+}
+
+.photos__text {
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__item {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__item {
+    width: 33.33%;
+  }
+}

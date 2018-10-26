@@ -43,6 +43,9 @@ img {
 
 .visually-hidden {
   position: absolute;
+  top: 0;
+  left: 0;
+
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
@@ -93,7 +96,7 @@ img {
     padding-right: @desktop-padding;
   }
 
-  .bg-triangle {
+  .bg-triangle::after {
     height: 80px;
   }
 }

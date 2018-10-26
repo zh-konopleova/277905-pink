@@ -9,51 +9,24 @@
 
   .interesting-fact__content {
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 95px;
+    padding-bottom: 95px;
     padding-left: 50%;
   }
 
-  .interesting-fact__content::after {
-    content: "24";
-    position: absolute;
-    left: 20px;
-    top: 50%;
-
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin-top: -100px;
-
-    text-align: center;
-    line-height: 200px;
-    vertical-align: middle;
-    font-size: 96px;
-    font-weight: 700;
-    color: #d22856;
-
-    background-image: url("../img/icon-editor-diagram-fill.svg");
-    background-size: 100% auto;
-  }
-
-  .interesting-fact__content::before {
-    content: "";
+  .interesting-fact__icon {
     position: absolute;
     left: 0;
     top: 50%;
 
-    display: block;
     width: 240px;
     height: 278px;
-    margin-top: -157px;
-    background-image: url("../img/icon-timer.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    margin-top: -144px;
   }
 
   .interesting-fact__h {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 11px;
 
     font-size: 30px;
     line-height: 36px;
@@ -62,7 +35,10 @@
 
   .interesting-fact__description {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -72,21 +48,34 @@
   }
 
   .interesting-fact__content {
-    padding-bottom: 120px;
-    padding-left: 380px;
+    padding-top: 80px;
+    padding-bottom: 113px;
+    padding-left: 365px;
   }
 
-  .interesting-fact__content::before {
+  .interesting-fact__icon {
     width: 300px;
-    height: 348px;
-    margin-top: -195px;
+    height: 347px;
+    margin-top: -209px;
   }
 
-  .interesting-fact__content::after {
-    left: 25px;
-    width: 250px;
-    height: 250px;
-    line-height: 250px;
-    margin-top: -125px;
+  .interesting-fact__br {
+    display: none;
+  }
+
+  .interesting-fact__h {
+    margin-bottom: 25px;
+  }
+
+  .interesting-fact__description {
+    margin-bottom: 28px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .interesting-fact__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

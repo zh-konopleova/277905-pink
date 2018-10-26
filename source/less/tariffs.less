@@ -2,7 +2,7 @@
 
 .tariffs {
   padding-top: 65px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   background-color: #f2f2f2;
 }
 
@@ -16,22 +16,24 @@
   flex-shrink: 0;
   border-collapse: collapse;
   width: 3 * @cell-width;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .tariffs__cell {
+  position: relative;
   box-sizing: border-box;
   width: @cell-width;
   border: solid 2px #e5e5e5;
 
   position: relative;
-  padding: 15px 25px;
+  padding: 14px 23px;
   background-color: #ffffff;
   text-transform: uppercase;
 }
 
 .tariffs__cell--header {
-  padding: 20px 0;
+  padding: 18px 0;
+  overflow: hidden;
   background-color: #283645;
   color: #ffffff;
 }
@@ -44,10 +46,23 @@
   display: none;
 }
 
+.tariffs__hit-label {
+  position: absolute;
+  top: 11px;
+  left: -28px;
+
+  width: 110px;
+  height: 30px;
+  margin: 0;
+  transform: rotate(-45deg);
+  background-color: #d22856;
+  color: #ffffff;
+}
+
 .tariffs__icon {
   position: absolute;
   top: 50%;
-  right: 25px;
+  right: 20px;
 }
 
 .tariffs__icon--yes {
@@ -75,6 +90,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .tariffs {
+    padding-top: 35px;
+  }
+
   .tariffs__content {
     box-sizing: border-box;
     width: @tablet-width;
@@ -88,8 +107,12 @@
 
   .tariffs__cell {
     width: 25%;
-    padding: 15px 10px;
+    padding: 7px 15px;
     font-size: 0;
+  }
+
+  .tariffs__cell--header {
+    padding: 15px 10px;
   }
 
   .tariffs__cell--empty {
@@ -104,18 +127,68 @@
     text-transform: none;
   }
 
+  .tariffs__hit-label {
+    top: 5px;
+    width: 100px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+
   .tariffs__icon {
     left: 50%;
+    margin-left: -12.5px;
   }
 
   .slider--js .tariffs__nav {
     display: none;
   }
+
+  .tariffs__name {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .tariffs__price {
+    font-size: 18px;
+    line-height: 1;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .tariffs {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
   .tariffs__content {
     width: @desktop-width;
     padding: 0 @desktop-padding;
+  }
+
+  .tariffs__cell {
+    padding: 14px 21px;
+  }
+
+  .tariffs__cell--header {
+    padding: 23px 10px;
+  }
+
+  .tariffs__cell--label {
+    font-size: 18px;
+  }
+
+  .tariffs__hit-label {
+    top: 13px;
+    width: 106px;
+  }
+
+  .tariffs__name {
+    font-size: 18px;
+  }
+
+  .tariffs__price {
+    margin-top: -1px;
+    font-size: 24px;
   }
 }

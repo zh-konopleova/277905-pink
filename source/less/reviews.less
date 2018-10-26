@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 50px;
+  padding-top: 45px;
   padding-bottom: 60px;
   text-align: center;
 }
@@ -10,6 +10,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 
+  margin: 0;
   padding-left: 0;
   list-style: none;
 }
@@ -17,20 +18,25 @@
 .reviews__item {
   flex-shrink: 0;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .reviews {
-    padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+
+  .reviews__item {
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews {
     position: relative;
-    padding-top: 190px;
-    padding-bottom: 130px;
+    padding-top: 185px;
+    padding-bottom: 95px;
   }
 
   .reviews::before {

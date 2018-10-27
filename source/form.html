@@ -109,7 +109,6 @@
       <div class="header__container">
         <div class="header__logo-container">
           <a
-            href="./index.html"
             class="header__logo-link">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
@@ -119,16 +118,22 @@
           </a>
 
           <button
+            id="close__header-nav"
             type="button"
-            class="header__menu-btn">
+            class="header__menu-btn header__menu-btn--close">
             <svg
               class="header__menu-icon"
               width="23.867px" height="23.867px">
               <use xlink:href="#icon-menu-cross"></use>
             </svg>
+          </button>
 
+          <button
+            id="open__header-nav"
+            type="button"
+            class="header__menu-btn header__menu-btn--open">
             <svg
-              class="header__menu-icon hidden"
+              class="header__menu-icon"
               width="49.945px" height="24.007px">
               <use xlink:href="#icon-menu-burger"></use>
             </svg>
@@ -153,7 +158,6 @@
             </li>
             <li class="header__nav-item">
               <a
-                href="./form.html"
                 class="header__nav-link active">
                 Конкурс
               </a>

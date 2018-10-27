@@ -139,7 +139,8 @@
           <ul class="header__nav-list">
             <li class="header__nav-item">
               <a
-                class="header__nav-link active">
+                href="./index.html"
+                class="header__nav-link">
                 Главная
               </a>
             </li>
@@ -153,7 +154,7 @@
             <li class="header__nav-item">
               <a
                 href="./form.html"
-                class="header__nav-link">
+                class="header__nav-link active">
                 Конкурс
               </a>
             </li>
@@ -184,7 +185,8 @@
         </p>
       </div>
 
-      <form class="form form--competition page__form-competition" action="index.html" method="post">
+      <form class="form form--competition page__form-competition"
+        action="https://echo.htmlacademy.ru" method="post">
         <div class="form__fieldset-wrapper form__fieldset-wrapper--user-info">
           <fieldset class="form__fieldset form__fieldset--user-info">
             <legend class="visually-hidden">Личная информация</legend>
@@ -198,7 +200,8 @@
                 class="form__input-text"
                 type="text"
                 name="surname"
-                placeholder="Укажите фамилию *">
+                placeholder="Укажите фамилию *"
+                required>
             </div>
 
             <div class="form__field form__field--user-info form__field--name">
@@ -210,7 +213,8 @@
                 class="form__input-text"
                 type="text"
                 name="name"
-                placeholder="Введите ваше имя *">
+                placeholder="Введите ваше имя *"
+                required>
             </div>
 
             <div class="form__field form__field--user-info form__field--middlename">
@@ -394,7 +398,8 @@
                     class="form__input-text"
                     type="email"
                     name="email"
-                    placeholder="Введите почту*">
+                    placeholder="Введите почту*"
+                    required>
                   <button
                     class="form__input-btn"
                     type="button">
@@ -479,7 +484,7 @@
         <div class="form__btn-container">
           <button
             class="form__btn"
-            type="button"
+            type="submit"
             name="button">Отправить форму</button>
 
           <small class="form__spec">
@@ -510,7 +515,7 @@
           </li>
           <li class="footer__social-item">
             <a
-              href="https://twitter.com"
+              href="https://facebook.com"
               class="footer__social-link">
               <svg width="8.673px" height="18.944px">
                 <use xlink:href="#icon-facebook"></use>
@@ -519,7 +524,7 @@
           </li>
           <li class="footer__social-item">
             <a
-              href="https://twitter.com"
+              href="https://youtube.com"
               class="footer__social-link">
               <svg width="14.64px" height="13.96px">
                 <use xlink:href="#icon-youtube"></use>

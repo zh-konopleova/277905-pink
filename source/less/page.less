@@ -1,7 +1,11 @@
 .page__h1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 168px;
   margin-top: -68px;
-  padding-top: 98px;
-  padding-bottom: 81px;
+  padding-top: 68px;
 
   background-color: #1d2631;
   color: #ffffff;
@@ -13,7 +17,8 @@
 }
 
 .page__h1 {
-  margin: 0;
+  margin-top: 29px;
+
   font-size: 24px;
   line-height: 1.2;
   text-align: center;
@@ -22,7 +27,10 @@
 
 .page__h1--photo {
   width: 200px;
-  margin: auto;
+}
+
+.page__h1--form {
+  width: 240px;
 }
 
 .page__slogan-container {
@@ -30,9 +38,22 @@
   padding-bottom: 48px;
 }
 
+.page__slogan-container--form {
+  padding-top: 46px;
+  padding-bottom: 41px;
+}
+
 .page__slogan {
   margin: auto;
   text-align: center;
+}
+
+.page__slogan-form {
+  display: none;
+}
+
+.page__form-competition {
+  margin-bottom: 15px;
 }
 
 .page__footer--index {
@@ -41,15 +62,16 @@
 
 @media (min-width: @tablet-width) {
   .page__h1-container {
+    min-height: 329px;
     margin-top: -110px;
-    padding-top: 180px;
-    padding-bottom: 140px;
+    padding-top: 110px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: auto;
   }
 
   .page__h1 {
+    margin-top: 70px;
     font-size: 50px;
   }
 
@@ -57,14 +79,26 @@
     width: 430px;
   }
 
+  .page__h1--form {
+    width: 500px;
+  }
+
   .page__slogan-container {
     padding-top: 90px;
     padding-bottom: 75px;
   }
 
+  .page__slogan-container--form {
+    padding-bottom: 43px;
+  }
+
   .page__slogan {
-    width: 460px;
+    width: 500px;
     font-size: 18px;
+  }
+
+  .page__slogan-request {
+    display: inline;
   }
 
   .page__footer--index {
@@ -74,14 +108,14 @@
 
 @media (min-width: @desktop-width) {
   .page__h1-container {
+    min-height: 282px;
     margin-top: -110px;
-    padding-top: 172px;
-    padding-bottom: 100px;
+    padding-top: 110px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
   .page__h1 {
-    margin: auto;
+    margin-top: 64px;
   }
 
   .page__h1--photo {
@@ -97,7 +131,15 @@
     padding-bottom: 90px;
   }
 
+  .page__slogan-container--form {
+    padding-bottom: 40px;
+  }
+
   .page__slogan {
     width: 600px;
+  }
+
+  .page__slogan--form {
+    width: 800px;
   }
 }

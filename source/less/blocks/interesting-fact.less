@@ -1,0 +1,81 @@
+.interesting-fact {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .interesting-fact {
+    display: block;
+  }
+
+  .interesting-fact__content {
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 95px;
+    padding-left: 50%;
+  }
+
+  .interesting-fact__icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 240px;
+    height: 278px;
+    margin-top: -144px;
+  }
+
+  .interesting-fact__h {
+    margin: 0;
+    margin-bottom: 11px;
+
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .interesting-fact__description {
+    margin: 0;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .interesting-fact {
+    background-color: #f2f2f2;
+  }
+
+  .interesting-fact__content {
+    padding-top: 80px;
+    padding-bottom: 113px;
+    padding-left: 365px;
+  }
+
+  .interesting-fact__icon {
+    width: 300px;
+    height: 347px;
+    margin-top: -209px;
+  }
+
+  .interesting-fact__br {
+    display: none;
+  }
+
+  .interesting-fact__h {
+    margin-bottom: 25px;
+  }
+
+  .interesting-fact__description {
+    margin-bottom: 28px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .interesting-fact__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

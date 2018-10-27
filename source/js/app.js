@@ -1,7 +1,18 @@
+document.getElementById('close__header-nav').addEventListener('click', function () {
+  document.querySelector('.header').classList.add('closed');
+});
+
+document.getElementById('open__header-nav').addEventListener('click', function () {
+  document.querySelector('.header').classList.remove('closed');
+});
+
+window.addEventListener('resize', function () {
+  document.querySelector('.header').classList.remove('closed');
+});
+
 document.querySelectorAll('.slider').forEach(function (el) {
   el.classList.add('slider--js');
 });
-
 
 function moveToSlide(slider, item, offset_callback) {
   var max = slider.dataset.max,
@@ -24,43 +35,47 @@ var reviewsSlider = document.querySelector('#reviews-slider'),
       return (-1 * item * 100) + '%';
     };
 
-reviewsSlider.querySelectorAll('.slider__nav-link').forEach(function (el) {
-  el.addEventListener('click', function () {
+if (reviewsSlider) {
+  reviewsSlider.querySelectorAll('.slider__nav-link').forEach(function (el) {
+    el.addEventListener('click', function () {
+      moveToSlide(
+        reviewsSlider,
+        parseInt(this.dataset.item, 10),
+        reviewsOffset
+      );
+    });
+  });
+
+  reviewsSlider.querySelector('.slider__nav-arrow--prev').addEventListener('click', function () {
     moveToSlide(
       reviewsSlider,
-      parseInt(this.dataset.item, 10),
+      parseInt(reviewsSlider.dataset.current, 10) - 1,
       reviewsOffset
     );
   });
-});
 
-reviewsSlider.querySelector('.slider__nav-arrow--prev').addEventListener('click', function () {
-  moveToSlide(
-    reviewsSlider,
-    parseInt(reviewsSlider.dataset.current, 10) - 1,
-    reviewsOffset
-  );
-});
-
-reviewsSlider.querySelector('.slider__nav-arrow--next').addEventListener('click', function () {
-  moveToSlide(
-    reviewsSlider,
-    parseInt(reviewsSlider.dataset.current, 10) + 1,
-    reviewsOffset
-  );
-});
+  reviewsSlider.querySelector('.slider__nav-arrow--next').addEventListener('click', function () {
+    moveToSlide(
+      reviewsSlider,
+      parseInt(reviewsSlider.dataset.current, 10) + 1,
+      reviewsOffset
+    );
+  });
+}
 
 var tariffsSlider = document.querySelector('#tariffs-slider'),
     tariffsOffset = function (item) {
       return (-1 * item * 280) + 'px';
     };
 
-tariffsSlider.querySelectorAll('.slider__nav-link').forEach(function (el) {
-  el.addEventListener('click', function () {
-    moveToSlide(
-      tariffsSlider,
-      parseInt(this.dataset.item, 10),
-      tariffsOffset
-    )
+if (tariffsSlider) {
+  tariffsSlider.querySelectorAll('.slider__nav-link').forEach(function (el) {
+    el.addEventListener('click', function () {
+      moveToSlide(
+        tariffsSlider,
+        parseInt(this.dataset.item, 10),
+        tariffsOffset
+      )
+    });
   });
-})
+}

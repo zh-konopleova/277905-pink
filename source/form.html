@@ -185,7 +185,9 @@
         </p>
       </div>
 
-      <form class="form form--competition page__form-competition"
+      <form
+        id="competition-form"
+        class="form form--competition page__form-competition"
         action="https://echo.htmlacademy.ru" method="post">
         <div class="form__fieldset-wrapper form__fieldset-wrapper--user-info">
           <fieldset class="form__fieldset form__fieldset--user-info">
@@ -474,7 +476,6 @@
               <textarea
                 id="competition-form__message"
                 class="form__textarea"
-                type="text"
                 name="emotions"
                 placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
@@ -547,5 +548,38 @@
         </p>
       </div>
     </footer>
+
+    <div class="dialog dialog--error">
+      <div class="dialog__content">
+        <b class="dialog__h">Что-то пошло не&nbsp;так</b>
+        <p class="dialog__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+      </div>
+
+      <div class="dialog__btn-container">
+        <button
+          type="button"
+          class="dialog__btn">ОК</button>
+      </div>
+    </div>
+
+    <div class="dialog dialog--success">
+      <div class="dialog__content">
+        <b class="dialog__h">Ваша заявка отправлена</b>
+        <p class="dialog__text">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам.
+          В ближайшее время мы рассмотрим ее и оповестим вас.
+        </p>
+      </div>
+
+      <div class="dialog__btn-container">
+        <button
+          type="button"
+          class="dialog__btn">Закрыть окно</button>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>

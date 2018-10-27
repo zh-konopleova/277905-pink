@@ -14,7 +14,6 @@ document.querySelectorAll('.slider').forEach(function (el) {
   el.classList.add('slider--js');
 });
 
-
 function moveToSlide(slider, item, offset_callback) {
   var max = slider.dataset.max,
       min = slider.dataset.min;

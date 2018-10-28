@@ -5,16 +5,20 @@
   color: #ffffff;
 }
 
-.header.closed {
+.header--closed {
   background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
 
-.header.closed .header__nav {
+.header--closed .header__nav {
   display: none;
 }
 
 .header__menu-btn--close {
+  display: none;
+}
+
+.header--js .header__menu-btn--close {
   display: block;
 }
 
@@ -22,11 +26,11 @@
   display: none;
 }
 
-.header.closed .header__menu-btn--close {
+.header--closed .header__menu-btn--close {
   display: none;
 }
 
-.header.closed .header__menu-btn--open {
+.header--closed .header__menu-btn--open {
   display: block;
 }
 
@@ -203,7 +207,7 @@
     text-transform: none;
   }
 
-  .header__nav-link.active {
+  .header__nav-link--active {
     border-bottom: 2px solid #ffffff;
   }
 }

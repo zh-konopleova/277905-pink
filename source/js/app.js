@@ -1,3 +1,8 @@
+var width = document.body.offsetWidth;
+if (width < 1200) {
+  document.querySelector('.header').classList.add('closed');
+}
+
 document.getElementById('close__header-nav').addEventListener('click', function () {
   document.querySelector('.header').classList.add('closed');
 });
@@ -10,9 +15,11 @@ window.addEventListener('resize', function () {
   document.querySelector('.header').classList.remove('closed');
 });
 
-document.querySelectorAll('.slider').forEach(function (el) {
-  el.classList.add('slider--js');
-});
+var sliders = document.querySelectorAll('.slider');
+for (var i = 0; i < sliders.length; i++) {
+  var slider = sliders[i];
+  slider.classList.add('slider--js');
+}
 
 function moveToSlide(slider, item, offset_callback) {
   var max = slider.dataset.max,
@@ -36,15 +43,16 @@ var reviewsSlider = document.querySelector('#reviews-slider'),
     };
 
 if (reviewsSlider) {
-  reviewsSlider.querySelectorAll('.slider__nav-link').forEach(function (el) {
-    el.addEventListener('click', function () {
+  var links = reviewsSlider.querySelectorAll('.slider__nav-link');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function () {
       moveToSlide(
         reviewsSlider,
         parseInt(this.dataset.item, 10),
         reviewsOffset
       );
     });
-  });
+  }
 
   reviewsSlider.querySelector('.slider__nav-arrow--prev').addEventListener('click', function () {
     moveToSlide(
@@ -69,13 +77,28 @@ var tariffsSlider = document.querySelector('#tariffs-slider'),
     };
 
 if (tariffsSlider) {
-  tariffsSlider.querySelectorAll('.slider__nav-link').forEach(function (el) {
-    el.addEventListener('click', function () {
+  var links = tariffsSlider.querySelectorAll('.slider__nav-link');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function () {
       moveToSlide(
         tariffsSlider,
         parseInt(this.dataset.item, 10),
         tariffsOffset
       )
     });
+  }
+}
+
+function initMap() {
+  var coords = { lat: 59.9387942, lng: 30.3230833 };
+  var map = new google.maps.Map(document.getElementById('map-container'), {
+    center: coords,
+    zoom: 14
+  });
+
+  var marker = new google.maps.Marker({
+    position: coords,
+    map: map,
+    title: 'Pink'
   });
 }

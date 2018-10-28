@@ -13,6 +13,8 @@
 
 .form__fieldset {
   box-sizing: border-box;
+  min-width: @mobile-width;
+  max-width: 100%;
   width: @mobile-width;
   padding: 0 @mobile-padding;
   margin: auto;
@@ -230,6 +232,8 @@
   align-items: center;
 
   box-sizing: border-box;
+  min-width: @mobile-width;
+  max-width: 100%;
   width: @mobile-width;
   padding: 0 @mobile-padding;
   margin: auto;
@@ -275,6 +279,8 @@
 
   .form__fieldset-wrapper {
     box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
     width: @tablet-width;
     padding: 30px @tablet-padding;
     margin: auto;
@@ -303,6 +309,7 @@
   }
 
   .form__fieldset {
+    min-width: 0;
     width: 100%;
     padding: 45px 60px;
     padding-bottom: 57px;
@@ -435,6 +442,7 @@
     flex-wrap: wrap;
 
     box-sizing: border-box;
+    max-width: 100%;
     width: @desktop-width;
     padding: 0 @desktop-padding;
     margin: auto;

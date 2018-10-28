@@ -15,12 +15,12 @@
 .tariffs__table {
   flex-shrink: 0;
   border-collapse: collapse;
+  border-spacing: 0;
   width: 3 * @cell-width;
   margin-bottom: 30px;
 }
 
 .tariffs__cell {
-  position: relative;
   box-sizing: border-box;
   width: @cell-width;
   border: solid 2px #e5e5e5;
@@ -45,9 +45,14 @@
   display: none;
 }
 
+.tariffs__cell-content {
+  position: relative;
+  height: 100%;
+}
+
 .tariffs__hit-label {
   position: absolute;
-  top: 11px;
+  top: -7px;
   left: -28px;
 
   width: 110px;
@@ -60,8 +65,8 @@
 
 .tariffs__icon {
   position: absolute;
-  top: 50%;
   right: 20px;
+  top: 50%;
 }
 
 .tariffs__icon--yes {
@@ -95,6 +100,7 @@
 
   .tariffs__content {
     box-sizing: border-box;
+    max-width: 100%;
     width: @tablet-width;
     margin: auto;
     padding: 0 @tablet-padding;
@@ -127,7 +133,9 @@
   }
 
   .tariffs__hit-label {
-    top: 5px;
+    top: -10px;
+    left: -40px;
+
     width: 100px;
     height: 28px;
     font-size: 14px;
@@ -178,7 +186,7 @@
   }
 
   .tariffs__hit-label {
-    top: 13px;
+    top: -10px;
     width: 106px;
   }
 

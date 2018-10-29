@@ -7,10 +7,9 @@
       content="width=device-width,initial-scale=1">
     <title>Pink</title>
 
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
-  <body>
+  <body class="page">
     <svg class="hidden">
       <symbol id="icon-menu-cross" viewBox="0 0 23.867 23.867" >
         <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
@@ -93,7 +92,7 @@
           <a
             class="header__logo-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 960px)" srcset="./img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
               <img src="./img/logo-pink-white-mobile.svg" alt="Логотип Pink">
             </picture>
@@ -126,7 +125,7 @@
           <ul class="header__nav-list">
             <li class="header__nav-item">
               <a
-                class="header__nav-link active">
+                class="header__nav-link header__nav-link--active">
                 Главная
               </a>
             </li>
@@ -223,7 +222,7 @@
                   Поднимает настроение
                 </b>
                 <p class="advantages__description">
-                  Приложение позволяет вам победить осеннюю хандру и депрессию
+                  Приложение позволит вам победить осеннюю хандру и депрессию
                   буквально в несколько кликов
                 </p>
               </li>
@@ -232,8 +231,8 @@
                   Меняет мир вокруг
                 </b>
                 <p class="advantages__description">
-                  Сделайте снимок и украсте его смайликом
-                  или текстовой подписью, чтобы усилить эффект
+                  Сделайте снимок и украсьте его смайликом
+                  или текстовой подписью, чтобы усилить&nbsp;эффект
                 </p>
               </li>
               <li class="advantages__item advantages__item--step3">
@@ -264,9 +263,9 @@
             </h2>
 
             <p class="interesting-fact__description">
-              Британские ученые провели исследования и доказали,
-              что положительный эффект от использований приложения
-              длится целые сутки!
+              Британские ученые провели исследования идоказали,
+              что положительный эффект от использования приложения
+              длится целые&nbsp;сутки!
             </p>
 
             <a
@@ -347,7 +346,7 @@
             <ul class="slider__nav-list">
               <li class="slider__nav-item">
                 <button
-                  class="slider__nav-link active"
+                  class="slider__nav-link slider__nav-link--active"
                   type="button"
                   data-item="0">
                   <span class="visually-hidden">Первый слайд</span>
@@ -543,7 +542,7 @@
               </li>
               <li class="slider__nav-item">
                 <button
-                  class="slider__nav-link active"
+                  class="slider__nav-link slider__nav-link--active"
                   data-item="0"
                   type="button">
                   <span class="visually-hidden">Вторая колонка</span>
@@ -601,7 +600,7 @@
         <div id="map-container" class="contacts__map-container">
           <picture>
             <source
-              media="(min-width: 1200px)"
+              media="(min-width: 960px)"
               srcset="./img/bg-map-desktop@1x.jpg, ./img/bg-map-desktop@1x.jpg 2x">
             <source
               media="(min-width: 660px)"
@@ -609,7 +608,7 @@
             <img
               class="contacts__map"
               src="./img/bg-map-mobile@1x.png"
-              srcset="./img/bg-map-mobile@2x.png 2x"
+              srcset="./img/bg-map-mobile@2x.jpg 2x"
               alt="Карта проезда">
           </picture>
         </div>
@@ -621,7 +620,7 @@
       <div class="footer__container container">
         <a class="footer__logo-link">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 960px)" srcset="./img/logo-pink-blue-desktop.svg">
             <img src="./img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
           </picture>
         </a>

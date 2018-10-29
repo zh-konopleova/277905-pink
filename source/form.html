@@ -7,8 +7,7 @@
       content="width=device-width,initial-scale=1">
     <title>Pink</title>
 
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
 
   <body class="page">
@@ -112,7 +111,7 @@
             href="./index.html"
             class="header__logo-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 960px)" srcset="./img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
               <img src="./img/logo-pink-white-mobile.svg" alt="Логотип Pink">
             </picture>
@@ -159,7 +158,7 @@
             </li>
             <li class="header__nav-item">
               <a
-                class="header__nav-link active">
+                class="header__nav-link header__nav-link--active">
                 Конкурс
               </a>
             </li>
@@ -198,42 +197,44 @@
           <fieldset class="form__fieldset form__fieldset--user-info">
             <legend class="visually-hidden">Личная информация</legend>
 
-            <div class="form__field form__field--user-info form__field--surname">
-              <label
-                class="form__label-text form__label-text--user-info form__label-text--surname"
-                for="competition-form__surname">Фамилия:</label>
-              <input
-                id="competition-form__surname"
-                class="form__input-text"
-                type="text"
-                name="surname"
-                placeholder="Укажите фамилию *"
-                required>
-            </div>
+            <div class="form__fieldset-content form__fieldset--user-info">
+              <div class="form__field form__field--user-info form__field--surname">
+                <label
+                  class="form__label-text form__label-text--user-info form__label-text--surname"
+                  for="competition-form__surname">Фамилия:</label>
+                <input
+                  id="competition-form__surname"
+                  class="form__input-text"
+                  type="text"
+                  name="surname"
+                  placeholder="Укажите фамилию *"
+                  required>
+              </div>
 
-            <div class="form__field form__field--user-info form__field--name">
-              <label
-                class="form__label-text form__label-text--user-info form__label-text--name"
-                for="competition-form__name">Имя:</label>
-              <input
-                id="competition-form__name"
-                class="form__input-text"
-                type="text"
-                name="name"
-                placeholder="Введите ваше имя *"
-                required>
-            </div>
+              <div class="form__field form__field--user-info form__field--name">
+                <label
+                  class="form__label-text form__label-text--user-info form__label-text--name"
+                  for="competition-form__name">Имя:</label>
+                <input
+                  id="competition-form__name"
+                  class="form__input-text"
+                  type="text"
+                  name="name"
+                  placeholder="Введите ваше имя *"
+                  required>
+              </div>
 
-            <div class="form__field form__field--user-info form__field--middlename">
-              <label
-                class="form__label-text form__label-text--user-info form__label-text--middlename"
-                for="competition-form__middlename">Отчество:</label>
-              <input
-                id="competition-form__middlename"
-                class="form__input-text"
-                type="text"
-                name="middlename"
-                placeholder="Ну и отчество тоже">
+              <div class="form__field form__field--user-info form__field--middlename">
+                <label
+                  class="form__label-text form__label-text--user-info form__label-text--middlename"
+                  for="competition-form__middlename">Отчество:</label>
+                <input
+                  id="competition-form__middlename"
+                  class="form__input-text"
+                  type="text"
+                  name="middlename"
+                  placeholder="Ну и отчество тоже">
+              </div>
             </div>
           </fieldset>
         </div>
@@ -428,42 +429,44 @@
               С каким приложением путешествовали?
             </legend>
 
-            <div class="form__field form__field--platform">
-              <input
-                id="competition-form__ios"
-                class="form__radio"
-                type="radio"
-                name="platform"
-                value="ios"
-                checked>
-              <label
-                class="form__label-radio"
-                for="competition-form__ios">
-                Pink для iOS
-              </label>
-            </div>
+            <div class="form__fieldset-content form__fieldset-content--platforms">
+              <div class="form__field form__field--platform">
+                <input
+                  id="competition-form__ios"
+                  class="form__radio"
+                  type="radio"
+                  name="platform"
+                  value="ios"
+                  checked>
+                <label
+                  class="form__label-radio"
+                  for="competition-form__ios">
+                  Pink для iOS
+                </label>
+              </div>
 
-            <div class="form__field form__field--platform">
-              <input
-                id="competition-form__android"
-                class="form__radio"
-                type="radio"
-                value="android"
-                name="platform">
-              <label
-                class="form__label-radio"
-                for="competition-form__android">Pink на Android</label>
-            </div>
-            <div class="form__field form__field--platform">
-              <input
-                id="competition-form__winphone"
-                class="form__radio"
-                type="radio"
-                name="platform"
-                value="winphone">
-              <label
-                class="form__label-radio"
-                for="competition-form__winphone">Windows Phone</label>
+              <div class="form__field form__field--platform">
+                <input
+                  id="competition-form__android"
+                  class="form__radio"
+                  type="radio"
+                  value="android"
+                  name="platform">
+                <label
+                  class="form__label-radio"
+                  for="competition-form__android">Pink на Android</label>
+              </div>
+              <div class="form__field form__field--platform">
+                <input
+                  id="competition-form__winphone"
+                  class="form__radio"
+                  type="radio"
+                  name="platform"
+                  value="winphone">
+                <label
+                  class="form__label-radio"
+                  for="competition-form__winphone">Windows Phone</label>
+              </div>
             </div>
           </fieldset>
         </div>
@@ -474,7 +477,7 @@
               Опишите свои эмоции
             </legend>
 
-            <div class="form__fieldset-content">
+            <div class="form__fieldset-content form__fieldset-content--message">
               <label
                 class="form__label-text visually-hidden"
                 for="competition-form__message">Опишите свои эмоции</label>
@@ -504,7 +507,7 @@
       <div class="footer__container container">
         <a class="footer__logo-link" href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 960px)" srcset="./img/logo-pink-blue-desktop.svg">
             <img src="./img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
           </picture>
         </a>

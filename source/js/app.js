@@ -1,8 +1,5 @@
 var width = document.body.offsetWidth;
 document.querySelector('.header').classList.add('header--js');
-if (width < 1200) {
-  document.querySelector('.header').classList.add('header--closed');
-}
 
 document.getElementById('close__header-nav').addEventListener('click', function () {
   document.querySelector('.header').classList.add('header--closed');

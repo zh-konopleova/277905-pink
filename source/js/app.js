@@ -10,7 +10,10 @@ document.getElementById('open__header-nav').addEventListener('click', function (
 });
 
 window.addEventListener('resize', function () {
-  document.querySelector('.header').classList.remove('header--closed');
+  var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  if (width >= 960) {
+    document.querySelector('.header').classList.remove('header--closed');
+  }
 });
 
 var sliders = document.querySelectorAll('.slider');

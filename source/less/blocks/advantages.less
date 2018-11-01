@@ -41,10 +41,9 @@
 }
 
 @media (min-resolution: 144dpi),
-       (min-resolution: 1.5dppx) {
+  (min-resolution: 1.5dppx) {
   .advantages__list-container::after {
-    background-image:
-      url("../img/iphone-screen-mobile@2x.png"),
+    background-image: url("../img/iphone-screen-mobile@2x.png");
   }
 }
 
@@ -120,7 +119,7 @@
   }
 
   @media (min-resolution: 144dpi),
-         (min-resolution: 1.5dppx) {
+    (min-resolution: 1.5dppx) {
     .advantages__list-container::after {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
     }
@@ -160,16 +159,19 @@
     width: 290px;
   }
 
+  .advantages__item--step2 {
+    margin: 0 20px;
+  }
+
   .advantages__item::before {
     content: "";
     display: block;
-    width: 100%;
     height: 300px;
     margin-bottom: 56px;
 
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100% auto;
+    background-size: cover;
   }
 
   .advantages__item--step1::before {
@@ -185,7 +187,7 @@
   }
 
   @media (min-resolution: 144dpi),
-         (min-resolution: 1.5dppx) {
+    (min-resolution: 1.5dppx) {
     .advantages__item--step1::before {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
     }
@@ -206,6 +208,9 @@
   }
 
   .advantages__description {
+    width: 240px;
+    margin: auto;
+
     font-size: 18px;
     line-height: 30px;
   }

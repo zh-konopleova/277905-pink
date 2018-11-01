@@ -513,7 +513,7 @@
 
           <form class="upload-photo__form form" action="https://echo.htmlacademy.ru" method="post">
             <div class="upload-photo__field-list">
-              <div class="upload-photo__field">
+              <div class="upload-photo__field upload-photo__field--crop">
                 <label
                   class="upload-photo__label"
                   for="upload-photo__crop">
@@ -535,7 +535,7 @@
                     value="9">
                 </div>
               </div>
-              <div class="upload-photo__field">
+              <div class="upload-photo__field upload-photo__field--fill">
                 <label
                   class="upload-photo__label"
                   for="upload-photo__fill">
@@ -558,7 +558,7 @@
                     value="1">
                 </div>
               </div>
-              <div class="upload-photo__field">
+              <div class="upload-photo__field upload-photo__field--contrast">
                 <label
                   class="upload-photo__label"
                   for="upload-photo__brightness">
@@ -605,7 +605,7 @@
           </picture>
         </a>
 
-        <ul class="footer__social-list">
+        <ul class="footer__social-list page__footer-social-list--photo">
           <li class="footer__social-item">
             <a
               href="https://twitter.com"
@@ -650,7 +650,7 @@
       </div>
     </footer>
 
-    <script src="./js/picturefill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

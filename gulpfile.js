@@ -85,7 +85,7 @@ gulp.task("build", gulp.series(
 gulp.task("start", gulp.series(
   "clear",
   "copy",
-  "minify-image",
+  // "minify-image",
   "html",
   "css",
   "js",

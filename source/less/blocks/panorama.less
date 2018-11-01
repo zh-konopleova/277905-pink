@@ -8,6 +8,11 @@
   flex-direction: row;
 }
 
+.panorama__header {
+  left: 50%;
+  margin-left: -1 * @mobile-width / 2;
+}
+
 .panorama__h {
   display: inline-block;
   margin: 0;
@@ -52,6 +57,8 @@
 .panorama__created-at {
   margin: 0;
   display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .panorama__text {
@@ -88,6 +95,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .panorama__header {
+    margin-left: -1 * @tablet-width / 2;
+  }
+
   .panorama__h {
     margin-top: 60px;
   }
